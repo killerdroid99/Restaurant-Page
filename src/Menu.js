@@ -5,7 +5,7 @@ const Menu = () => {
 	const h1 = document.createElement("h1");
 	const menu = document.createElement("div");
 
-	menuContainer.classList.add("menu--container");
+	menuContainer.classList.add("container");
 	menu.classList.add("menu");
 	h1.innerText = "★━━━━━━━━━━ Today's Menu ━━━━━━━━━━★";
 
