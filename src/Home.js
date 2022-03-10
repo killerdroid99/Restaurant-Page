@@ -17,7 +17,7 @@ const Home = () => {
 	em2.innerText = "Valhalla";
 	h4.appendChild(em2);
 	div.classList.add("box");
-	h2.innerText = "Check out our divine Menu";
+	h2.innerText = "Check out Today's Menu";
 
 	main.appendChild(h1);
 	main.appendChild(h4);

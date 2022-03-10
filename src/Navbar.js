@@ -9,8 +9,12 @@ const Navbar = () => {
 	nav.classList.add("nav-bar");
 	h1.innerText = "🍻Valhalla";
 	home.innerText = "Home";
+	home.id = "home-link";
 	menu.innerText = "Menu";
+	menu.id = "menu-link";
 	contact.innerText = "Contact";
+	contact.id = "contact-link";
+
 	ul.appendChild(home);
 	ul.appendChild(menu);
 	ul.appendChild(contact);
