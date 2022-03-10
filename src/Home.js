@@ -6,6 +6,7 @@ const Home = () => {
 	const em1 = document.createElement("em");
 	const em2 = document.createElement("em");
 	const div = document.createElement("div");
+	const menuLink = document.createElement("a");
 
 	main.classList.add("main");
 	em1.innerText = "Care";
@@ -17,7 +18,12 @@ const Home = () => {
 	em2.innerText = "Valhalla";
 	h4.appendChild(em2);
 	div.classList.add("box");
-	h2.innerText = "Check out Today's Menu";
+	h2.innerText = "Check out Today's 👉";
+	menuLink.innerText = " Menu";
+	menuLink.addEventListener("click", () => {
+		document.getElementById("menu-link").click();
+	});
+	h2.insertAdjacentElement("beforeend", menuLink);
 
 	main.appendChild(h1);
 	main.appendChild(h4);

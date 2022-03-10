@@ -112,6 +112,11 @@ body {
 	}
 }
 
+.main h2 a {
+	color: purple;
+	cursor: pointer;
+}
+
 .container {
 	width: 75vw;
 	height: 82vh;
