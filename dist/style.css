@@ -131,6 +131,11 @@ body {
 	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
+	overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
 }
 
 .menu {
@@ -265,4 +270,63 @@ body {
 
 .contact strong {
 	color: purple;
+}
+
+@media only screen and (max-width: 700px) {
+	.nav-bar h1 {
+		font-size: 1.3rem;
+	}
+
+	.nav-bar {
+		padding-inline: 0.5em;
+	}
+
+	.nav-bar ul {
+		gap: 0.2em;
+	}
+
+	.nav-bar ul li {
+		font-size: 1rem;
+	}
+
+	.main {
+		margin-block: 7em;
+		height: auto;
+		padding-block: 1em;
+	}
+
+	.box {
+		margin-block: 2.5em;
+	}
+
+	.container {
+		width: 94vw;
+		padding-inline: 0.1em;
+	}
+
+	.container h1 {
+		font-size: 1.25rem;
+		width: 100%;
+	}
+
+	.menu {
+		grid-template-columns: 1fr;
+	}
+
+	.contact ul {
+		font-size: 1rem;
+		line-height: 2em;
+	}
+
+	.contact iframe {
+		width: 300px;
+	}
+
+	.contact form input {
+		max-width: 300px;
+	}
+
+	.contact form textarea {
+		max-width: 300px;
+	}
 }
