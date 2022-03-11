@@ -47,6 +47,7 @@ const Contact = () => {
 	textArea.rows = 5;
 	textArea.placeholder = "Message...";
 	btn.innerText = "Send";
+	btn.addEventListener("click", (event) => event.preventDefault());
 
 	ul.appendChild(addr);
 	ul.appendChild(map);
