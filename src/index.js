@@ -20,49 +20,67 @@ document.getElementById("home-link").style.cssText =
 	"border-bottom: 5px solid purple; border-radius: 10px; color: azure;";
 
 document.getElementById("home-link").addEventListener("click", () => {
-	HomePage.style.animation = "createEffect 1s";
-	MenuPage.style.animation = "tabEffect 1s";
-	ContactPage.style.animation = "tabEffect 1s";
+	if (
+		document.getElementById("home-link").style.cssText !==
+		"border-bottom: 5px solid purple; border-radius: 10px; color: azure;"
+	) {
+		HomePage.style.animation = "createEffect 1s";
+		MenuPage.style.animation = "tabEffect 1s";
+		ContactPage.style.animation = "tabEffect 1s";
 
-	setTimeout(() => {
-		MenuPage.remove();
-		ContactPage.remove();
-		content.appendChild(HomePage);
 		document.getElementById("home-link").style.cssText =
 			"border-bottom: 5px solid purple; border-radius: 10px; color: azure;";
 		document.getElementById("menu-link").style.cssText = "";
 		document.getElementById("contact-link").style.cssText = "";
-	}, 600);
+
+		setTimeout(() => {
+			MenuPage.remove();
+			ContactPage.remove();
+			content.appendChild(HomePage);
+		}, 600);
+	}
 });
 
 document.getElementById("menu-link").addEventListener("click", () => {
-	MenuPage.style.animation = "createEffect 1s";
-	HomePage.style.animation = "tabEffect 1s";
-	ContactPage.style.animation = "tabEffect 1s";
+	if (
+		document.getElementById("menu-link").style.cssText !==
+		"border-bottom: 5px solid purple; border-radius: 10px; color: azure;"
+	) {
+		MenuPage.style.animation = "createEffect 1s";
+		HomePage.style.animation = "tabEffect 1s";
+		ContactPage.style.animation = "tabEffect 1s";
 
-	setTimeout(() => {
-		HomePage.remove();
-		ContactPage.remove();
-		content.appendChild(MenuPage);
 		document.getElementById("menu-link").style.cssText =
 			"border-bottom: 5px solid purple; border-radius: 10px; color: azure;";
 		document.getElementById("home-link").style.cssText = "";
 		document.getElementById("contact-link").style.cssText = "";
-	}, 600);
+
+		setTimeout(() => {
+			HomePage.remove();
+			ContactPage.remove();
+			content.appendChild(MenuPage);
+		}, 600);
+	}
 });
 
 document.getElementById("contact-link").addEventListener("click", () => {
-	ContactPage.style.animation = "createEffect 1s";
-	HomePage.style.animation = "tabEffect 1s";
-	MenuPage.style.animation = "tabEffect 1s";
+	if (
+		document.getElementById("contact-link").style.cssText !==
+		"border-bottom: 5px solid purple; border-radius: 10px; color: azure;"
+	) {
+		ContactPage.style.animation = "createEffect 1s";
+		HomePage.style.animation = "tabEffect 1s";
+		MenuPage.style.animation = "tabEffect 1s";
 
-	setTimeout(() => {
-		HomePage.remove();
-		MenuPage.remove();
-		content.appendChild(ContactPage);
 		document.getElementById("contact-link").style.cssText =
 			"border-bottom: 5px solid purple; border-radius: 10px; color: azure;";
 		document.getElementById("home-link").style.cssText = "";
 		document.getElementById("menu-link").style.cssText = "";
-	}, 600);
+
+		setTimeout(() => {
+			HomePage.remove();
+			MenuPage.remove();
+			content.appendChild(ContactPage);
+		}, 600);
+	}
 });

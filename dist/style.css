@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", Helvetica, sans-serif;
-	/* list-style: none; */
 }
 
 body {
@@ -18,9 +17,13 @@ body {
 	justify-content: space-between;
 	padding: 2em;
 	padding-inline: 3.5em;
-	background: linear-gradient(to right, purple, gold);
+	background: goldenrod;
 	align-items: center;
 	color: blanchedalmond;
+}
+
+.nav-bar h1 {
+	text-shadow: 0px 0px 5px purple;
 }
 
 .nav-bar ul {
@@ -41,7 +44,7 @@ body {
 }
 
 .nav-bar ul li:hover {
-	border-bottom: 5px solid purple;
+	border-bottom: 5px solid rgba(128, 0, 128, 0.438);
 	border-radius: 10px;
 	color: azure;
 }
@@ -51,7 +54,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(to right, purple, gold);
+	background: rgba(128, 0, 128, 0.815);
 	height: clamp(300px, 25%, 400px);
 	margin: 30vh auto;
 	display: flex;
@@ -68,12 +71,12 @@ body {
 	left: 15%;
 	right: 15%;
 	filter: blur(2px);
-	border: 5px solid gold;
+	border: 10px double gold;
 }
 
 .main em {
-	color: purple;
-	text-shadow: 2px 2px 2px;
+	color: goldenrod;
+	text-shadow: 1px 1px 1px honeydew;
 }
 
 .box {
@@ -113,9 +116,9 @@ body {
 }
 
 .main h2 a {
-	color: purple;
+	color: goldenrod;
 	cursor: pointer;
-	text-shadow: 2px 2px 2px;
+	text-shadow: 1px 1px 1px honeydew;
 }
 
 .container {

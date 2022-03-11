@@ -6,12 +6,13 @@ module.exports = {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist"),
 	},
-	mode: "development",
+	mode: "production",
 	module: {
 		rules: [
 			{
 				test: /\.css$/i,
 				use: ["style-loader", "css-loader"],
+				type: "asset/resource",
 			},
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
